@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>B Manoj — Game Designer — Resume</title>
+  <meta name="description" content="Resume of B Manoj, Game Designer. Lead Game Designer and co-developer of BLACKOUT ARENA (Unreal Engine 5, Steam)." />
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    /* Resume is optimised for A4 print + ATS parsing:
+       single column, real text, no letter-spaced headings (those break text extraction). */
+    :root {
+      --ink: #14161b;
+      --body: #2e333d;
+      --muted: #5c6370;
+      --line: #e3e5ea;
+      --red: #c8102e;
+      --tint: #fbf3f4;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; }
+    body {
+      background: #e9ebef;
+      color: var(--body);
+      font-family: "Inter", "Segoe UI", Arial, sans-serif;
+      font-size: 9.15pt;
+      line-height: 1.38;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    a { color: inherit; text-decoration: none; }
+    b, strong { color: var(--ink); font-weight: 600; }
+
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 24px auto;
+      padding: 11mm 14mm 8mm;
+      background: #fff;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+      position: relative;
+    }
+    .page::before { /* thin brand bar */
+      content: ""; position: absolute; left: 0; top: 0; right: 0; height: 5px; background: var(--red);
+    }
+
+    /* ---------- Header ---------- */
+    .head { display: flex; justify-content: space-between; align-items: flex-end; gap: 8px; padding-bottom: 7px; border-bottom: 1.5px solid var(--ink); }
+    .who { display: flex; align-items: center; gap: 12px; }
+    .photo { width: 18mm; height: 18mm; border-radius: 50%; object-fit: cover; object-position: 50% 30%; border: 2px solid var(--red); flex: none; }
+    .name { margin: 0; font-size: 27pt; font-weight: 800; line-height: 1; color: var(--ink); letter-spacing: -0.01em; }
+    .name span { color: var(--red); }
+    .role { margin: 4px 0 0; font-size: 10.2pt; white-space: nowrap; font-weight: 600; color: var(--red); }
+    .contact { margin: 0; padding: 0; list-style: none; text-align: right; font-size: 8.35pt; line-height: 1.5; color: var(--body); white-space: nowrap; }
+    .contact a:hover { color: var(--red); }
+
+    .links { display: flex; justify-content: space-between; gap: 10px; margin: 6px 0 0; padding: 0; list-style: none; font-size: 8.2pt; white-space: nowrap; }
+    .links li b { color: var(--red); font-weight: 600; }
+
+    /* ---------- Highlights ---------- */
+    .highlights { display: grid; grid-template-columns: repeat(4, 1fr); margin: 9px 0 0; border: 1px solid var(--line); border-radius: 6px; background: var(--tint); }
+    .hl { padding: 6px 10px; border-right: 1px solid var(--line); }
+    .hl:last-child { border-right: 0; }
+    .hl strong { display: block; font-size: 12.5pt; font-weight: 800; color: var(--red); line-height: 1.15; }
+    .hl span { display: block; font-size: 7.6pt; color: var(--muted); line-height: 1.3; margin-top: 2px; }
+
+    /* ---------- Sections ---------- */
+    h2 {
+      margin: 10px 0 5px; padding-bottom: 2px;
+      font-size: 10pt; font-weight: 800; text-transform: uppercase; color: var(--ink);
+      border-bottom: 1px solid var(--line);
+    }
+    h2::before { content: ""; display: inline-block; width: 9px; height: 9px; background: var(--red); margin-right: 7px; vertical-align: 0; }
+    p { margin: 0; }
+    .summary { text-align: justify; hyphens: auto; }
+
+    .job { margin-bottom: 7px; }
+    .job:last-child { margin-bottom: 0; }
+    .job__top { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+    .job__title { margin: 0; font-size: 10.3pt; font-weight: 700; color: var(--ink); }
+    .job__date { font-size: 8.8pt; font-weight: 600; color: var(--ink); white-space: nowrap; }
+    .job__org { margin: 1px 0 0; font-size: 9pt; color: var(--red); font-weight: 600; }
+    .job__meta { margin: 2px 0 4px; font-size: 8.5pt; color: var(--muted); }
+
+    ul.bullets { margin: 3px 0 0; padding: 0 0 0 13px; }
+    ul.bullets li { margin: 0 0 1.8px; padding-left: 2px; }
+    ul.bullets li::marker { color: var(--red); }
+    .sub { margin: 5px 0 0; font-size: 9.4pt; font-weight: 700; color: var(--ink); }
+    .sub span { font-weight: 500; color: var(--muted); }
+
+    .skills { display: grid; grid-template-columns: 30mm 1fr; gap: 3px 10px; margin: 0; }
+    .skills dt { font-weight: 700; color: var(--ink); }
+    .skills dd { margin: 0; }
+
+    .foot { margin-top: 9px; padding-top: 6px; border-top: 1px solid var(--line); font-size: 8.4pt; color: var(--muted); display: flex; justify-content: space-between; gap: 12px; }
+
+    /* ---------- Screen-only toolbar ---------- */
+    .toolbar { position: sticky; top: 0; z-index: 5; display: flex; justify-content: center; gap: 10px; padding: 12px; background: rgba(233, 235, 239, 0.92); backdrop-filter: blur(6px); }
+    .toolbar a { font: 600 14px/1 "Inter", sans-serif; padding: 11px 18px; border-radius: 999px; background: var(--red); color: #fff; }
+    .toolbar a.ghost { background: #fff; color: var(--ink); border: 1px solid #cfd3da; }
+
+    @page { size: A4; margin: 0; }
+    @media print {
+      body { background: #fff; }
+      .toolbar { display: none; }
+      .page { margin: 0; box-shadow: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <a href="../assets/B-Manoj-Game-Designer-Resume.pdf" download>Download PDF</a>
+    <a class="ghost" href="../">← Portfolio</a>
+  </div>
+
+  <main class="page">
+    <!-- Header -->
+    <header class="head">
+      <div class="who">
+        <img class="photo" src="../assets/b-manoj-avatar.jpg" alt="B Manoj" />
+        <div>
+        <h1 class="name">B <span>MANOJ</span></h1>
+        <p class="role">Game Designer · Gameplay · Combat · Level Design</p>
+        </div>
+      </div>
+      <ul class="contact">
+        <li>Bengaluru, India · Open to relocation &amp; WFO</li>
+        <li><a href="tel:+916361391069">+91 63613 91069</a> · <a href="mailto:b07manoj112004@gmail.com">b07manoj112004@gmail.com</a></li>
+        <li><a href="https://www.linkedin.com/in/b-manoj-b24448374">linkedin.com/in/b-manoj-b24448374</a></li>
+      </ul>
+    </header>
+    <ul class="links">
+      <li><b>Portfolio:</b> <a href="https://bmanoj07112004-eng.github.io/B-Manoj-Portfolio/">bmanoj07112004-eng.github.io/B-Manoj-Portfolio</a></li>
+      <li><b>Steam:</b> <a href="https://store.steampowered.com/app/4158710/BLACKOUT_ARENA/">BLACKOUT ARENA</a></li>
+      <li><b>Video:</b> <a href="https://youtu.be/GdPYPrzWhKs">youtu.be/GdPYPrzWhKs</a></li>
+    </ul>
+
+    <!-- Highlights -->
+    <section class="highlights" aria-label="Highlights">
+      <div class="hl"><strong>Shipped on Steam</strong><span>Blackout Arena · UE5 · 2026</span></div>
+      <div class="hl"><strong>3.5 years</strong><span>Game design &amp; development</span></div>
+      <div class="hl"><strong>~16 hours</strong><span>Idea → playable prototype</span></div>
+      <div class="hl"><strong>Design + build</strong><span>Blueprints · C++ · AI tools</span></div>
+    </section>
+
+    <!-- Profile -->
+    <h2>Profile</h2>
+    <p class="summary">
+      Game Designer with <b>3.5 years of hands-on game design and development</b> and a commercial release:
+      <b>BLACKOUT ARENA</b>, a third-person action-adventure in <b>Unreal Engine 5</b> that I co-developed as Lead Game Designer
+      and released on <b>Steam in April 2026</b>. I design core loops, combat, enemy encounters, levels and missions, then
+      build and test them myself in <b>Blueprints and C++</b>, using AI tools to move fast. Seeking my first studio
+      Game Designer role, ready to contribute from day one.
+    </p>
+
+    <!-- Experience -->
+    <h2>Game Design Experience</h2>
+
+    <article class="job">
+      <div class="job__top">
+        <h3 class="job__title">Lead Game Designer &amp; Co-Developer: BLACKOUT ARENA</h3>
+        <span class="job__date">2025 – Present</span>
+      </div>
+      <p class="job__org">Red Deck Studio (independent studio I founded) · Bengaluru</p>
+      <p class="job__meta">Released on Steam 15 Apr 2026 · UE5 · Third-person action-adventure · PC + controller · Co-developed with Shreepati Gaonkar</p>
+      <ul class="bullets">
+        <li>Owned the game design for a <b>mission-driven single-player campaign</b>. Defined the core loop (explore → discover → fight → survive → descend), with risk rising the deeper the player goes.</li>
+        <li>Designed <b>combat encounters and enemy behaviour</b> for the ruin guardians; built their AI with <b>Behavior Trees and Blackboard</b> and balanced stats, pacing and difficulty in <b>spreadsheets</b>.</li>
+        <li>Designed <b>handcrafted levels</b> (jungle paths, temples, underground ritual chambers) with <b>environmental storytelling</b>: carved symbols, relics and secret chambers that reward exploration.</li>
+        <li>Wrote the <b>GDD and feature/mission specs</b>; shaped the Folk Heroes lore and mystery structure behind mission progression.</li>
+        <li>Implemented gameplay in <b>Blueprints and C++</b>, built cinematic story beats in <b>Sequencer</b>, and used <b>Nanite and Lumen</b> for cinematic lighting.</li>
+        <li>Ran <b>playtest → debug → iterate</b> cycles from the first public demo (early 2026) to Steam release, including store page, controller support and a GTX 1650 minimum spec. Used <b>AI tools</b> to speed up scripting, content and testing.</li>
+      </ul>
+
+      <p class="sub">OUTLANDER <span>· Lead Game Designer · UE5 sci-fi survival adventure · In early production</span></p>
+      <ul class="bullets">
+        <li>Designing a survival adventure built around <b>exploration, scarcity</b> and making a hostile world liveable.</li>
+      </ul>
+    </article>
+
+    <article class="job">
+      <div class="job__top">
+        <h3 class="job__title">Independent Game Designer &amp; Developer</h3>
+        <span class="job__date">2023 – 2025</span>
+      </div>
+      <p class="job__org">Self-directed · Bengaluru</p>
+      <ul class="bullets">
+        <li>Learned fundamentals in <b>Unity</b> (about 6 months), then moved to <b>Unreal Engine 5</b> as my main engine.</li>
+        <li>Designed and built prototypes across genres: <b>online multiplayer (Unity + Photon PUN)</b>, story-driven, horror, combat systems, enemy AI, environments and level design.</li>
+        <li>Delivered freelance web and mobile projects directly to clients, from brief to shipped build: real experience with scope, deadlines and feedback.</li>
+      </ul>
+    </article>
+
+    <!-- Projects -->
+    <h2>Other Projects</h2>
+    <ul class="bullets">
+      <li><b>Hamster Game, rapid prototype (2026, solo):</b> a funny, hamster-themed casual browser game, idea to playable first version in <b>about 16 hours</b>; now re-prototyping it in UE5. <a href="https://lnkd.in/p/g7zQ_iun">lnkd.in/p/g7zQ_iun</a></li>
+      <li><b>OptaLead, AI agents and automation platform (shipped):</b> AI voice-call and WhatsApp workflow platform; the same AI-workflow skills I use to speed up game production. <a href="https://youtu.be/NtDdmXQsikA">youtu.be/NtDdmXQsikA</a></li>
+    </ul>
+
+    <!-- Skills -->
+    <h2>Skills</h2>
+    <dl class="skills">
+      <dt>Game Design</dt>
+      <dd>Core gameplay loops, combat design, enemy &amp; encounter design, level design, mission design, player progression, difficulty balancing, environmental storytelling, player experience</dd>
+      <dt>Unreal Engine 5</dt>
+      <dd>Blueprints, C++, Behavior Trees &amp; Blackboard, Sequencer, Nanite, Lumen, Steam release</dd>
+      <dt>Documentation</dt>
+      <dd>Game Design Document (GDD), feature &amp; mission specs, spreadsheet-based balancing</dd>
+      <dt>Process</dt>
+      <dd>Rapid prototyping, playtesting, testing &amp; debugging, iteration, AI-accelerated workflows</dd>
+      <dt>Also</dt>
+      <dd>Unity, Photon PUN (multiplayer), AI agents &amp; automation</dd>
+    </dl>
+
+    <!-- EDUCATION: add your degree / college here if you want it on the resume, e.g.
+    <h2>Education</h2>
+    <p><b>Degree name</b>, College name · Year</p>
+    -->
+
+    <footer class="foot">
+      <span>Design case study, gameplay video &amp; screenshots in my portfolio</span>
+      <span>Happy to take a game design test</span>
+    </footer>
+  </main>
+</body>
+</html>

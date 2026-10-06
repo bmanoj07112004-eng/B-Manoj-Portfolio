@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>B Manoj — Game Designer | Gameplay, Combat, Level &amp; Mission Design</title>
+  <meta name="description" content="B Manoj is a Game Designer with 3.5 years of hands-on game design and development. Lead Game Designer and co-developer of BLACKOUT ARENA, an Unreal Engine 5 action-adventure released on Steam." />
+  <meta name="author" content="B Manoj" />
+  <meta name="theme-color" content="#0a0b0e" />
+  <link rel="canonical" href="https://bmanoj07112004-eng.github.io/B-Manoj-Portfolio/" />
+
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="B Manoj — Game Designer" />
+  <meta property="og:description" content="Lead Game Designer & co-developer of BLACKOUT ARENA (Unreal Engine 5, released on Steam). Combat, encounters, levels, missions, and rapid prototyping." />
+  <meta property="og:url" content="https://bmanoj07112004-eng.github.io/B-Manoj-Portfolio/" />
+  <meta property="og:image" content="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4158710/0ae9863e022e4cbf5dc89dce2879512a15a4c485/header.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "B Manoj",
+    "jobTitle": "Game Designer",
+    "email": "mailto:b07manoj112004@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Bengaluru", "addressCountry": "IN" },
+    "url": "https://bmanoj07112004-eng.github.io/B-Manoj-Portfolio/",
+    "sameAs": [
+      "https://www.linkedin.com/in/b-manoj-b24448374",
+      "https://store.steampowered.com/app/4158710/BLACKOUT_ARENA/",
+      "https://red-deck.com"
+    ],
+    "knowsAbout": ["Game Design", "Gameplay Design", "Combat Design", "Level Design", "Mission Design", "Unreal Engine 5", "Blueprints", "Behavior Trees", "Rapid Prototyping"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="top">
+    <div class="nav__inner container">
+      <a href="#top" class="nav__brand" aria-label="B Manoj — home">
+        <span class="nav__mark">BM</span>
+        <span class="nav__name">B MANOJ <em>Game Designer</em></span>
+      </a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+      <nav class="nav__links" id="nav-links" aria-label="Primary">
+        <a href="#blackout-arena">Blackout Arena</a>
+        <a href="#breakdown">Design Breakdown</a>
+        <a href="#work">More Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="assets/B-Manoj-Game-Designer-Resume.pdf" class="btn btn--sm btn--red" download>Resume&nbsp;↓</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__content">
+        <p class="eyebrow reveal">Game Designer · Gameplay · Combat · Level &amp; Mission Design</p>
+        <h1 id="hero-title" class="hero__title reveal">
+          B&nbsp;Manoj
+          <span>Game Designer</span>
+        </h1>
+        <p class="hero__lead reveal">
+          I design games players can <strong>feel</strong>: combat, enemy encounters, levels, missions and the systems
+          that hold them together. Then I build, test and iterate on them myself in Unreal Engine&nbsp;5.
+        </p>
+        <div class="hero__cta reveal">
+          <a class="btn btn--red" href="#blackout-arena">See my shipped game</a>
+          <a class="btn btn--ghost" href="assets/B-Manoj-Game-Designer-Resume.pdf" download>Download resume</a>
+        </div>
+        <p class="hero__status reveal">
+          <span class="dot" aria-hidden="true"></span>
+          <span><strong>BLACKOUT ARENA</strong> is out now on Steam. Released 15 April 2026.</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ STATS ============ -->
+    <section class="stats" aria-label="Highlights">
+      <div class="container stats__grid">
+        <div class="stat reveal"><span class="stat__num">3.5<small>yrs</small></span><span class="stat__label">Hands-on game design &amp; development</span></div>
+        <div class="stat reveal"><span class="stat__num">1</span><span class="stat__label">Commercial UE5 game released on Steam</span></div>
+        <div class="stat reveal"><span class="stat__num">~16<small>hrs</small></span><span class="stat__label">Idea → playable prototype</span></div>
+        <div class="stat reveal"><span class="stat__num">0→1</span><span class="stat__label">Concept, design, build, test, ship</span></div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURED: BLACKOUT ARENA ============ -->
+    <section class="section" id="blackout-arena" aria-labelledby="ba-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Featured project · Released on Steam</p>
+          <h2 id="ba-title" class="section__title">BLACKOUT ARENA <span class="muted">The Legend of Folk Heroes</span></h2>
+          <p class="section__lead">
+            A single-player, third-person dark-thriller survival adventure set in mysterious jungles and ancient ruins.
+            A lone traveller is drawn into an awakened arena that tests them through missions, deadly guardians and buried secrets.
+          </p>
+        </header>
+
+        <div class="ba">
+          <div class="ba__media reveal">
+            <button class="video" type="button" data-yt="GdPYPrzWhKs" aria-label="Play Blackout Arena gameplay video">
+              <img src="https://i.ytimg.com/vi/GdPYPrzWhKs/maxresdefault.jpg" alt="Blackout Arena gameplay video thumbnail" loading="lazy" width="1280" height="720" />
+              <span class="video__play" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28"><path fill="currentColor" d="M8 5v14l11-7z"/></svg>
+              </span>
+              <span class="video__label">Watch gameplay</span>
+            </button>
+          </div>
+
+          <aside class="ba__meta reveal" aria-label="Project facts">
+            <dl class="facts">
+              <div><dt>My role</dt><dd>Lead Game Designer &amp; Co-Developer</dd></div>
+              <div><dt>Team</dt><dd>B Manoj &amp; Shreepati Gaonkar (small indie team)</dd></div>
+              <div><dt>Publisher</dt><dd>Red Deck Studio</dd></div>
+              <div><dt>Engine</dt><dd>Unreal Engine 5 (Nanite, Lumen)</dd></div>
+              <div><dt>Platform</dt><dd>Steam · Windows PC · Controller support</dd></div>
+              <div><dt>Genre</dt><dd>Action · Adventure · Survival · Mystery</dd></div>
+              <div><dt>Released</dt><dd>15 April 2026</dd></div>
+            </dl>
+            <div class="ba__links">
+              <a class="btn btn--red btn--block" href="https://store.steampowered.com/app/4158710/BLACKOUT_ARENA/" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-9.96 9.1l5.36 2.22a2.8 2.8 0 0 1 1.6-.5h.16l2.4-3.46v-.05a3.79 3.79 0 1 1 3.79 3.79h-.09l-3.4 2.44v.13a2.84 2.84 0 0 1-5.62.57L2.4 14.7A10 10 0 1 0 12 2Zm-4.72 15.2-1.22-.5a2.13 2.13 0 1 0 1.17-2.9l1.27.52a1.57 1.57 0 1 1-1.22 2.88Zm9.25-7.33a2.53 2.53 0 1 0-2.53 2.52 2.53 2.53 0 0 0 2.53-2.52Zm-4.42 0a1.9 1.9 0 1 1 1.9 1.9 1.9 1.9 0 0 1-1.9-1.9Z"/></svg>
+                View on Steam
+              </a>
+              <a class="btn btn--ghost btn--block" href="https://red-deck.com/games/blackout-arena" target="_blank" rel="noopener">Official game page</a>
+            </div>
+          </aside>
+        </div>
+
+        <ul class="gallery reveal" aria-label="Blackout Arena screenshots">
+          <li><button type="button" data-full="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4158710/3b498b5d9d9b936c7bf81b99f42876881943728a/ss_3b498b5d9d9b936c7bf81b99f42876881943728a.1920x1080.jpg"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4158710/3b498b5d9d9b936c7bf81b99f42876881943728a/ss_3b498b5d9d9b936c7bf81b99f42876881943728a.600x338.jpg" alt="Blackout Arena screenshot 1" loading="lazy" width="600" height="338" /></button></li>
+          <li><button type="button" data-full="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4158710/e7e383e390068622d2a2afc5c0ae5fd757f48d5f/ss_e7e383e390068622d2a2afc5c0ae5fd757f48d5f.1920x1080.jpg"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4158710/e7e383e390068622d2a2afc5c0ae5fd757f48d5f/ss_e7e383e390068622d2a2afc5c0ae5fd757f48d5f.600x338.jpg" alt="Blackout Arena screenshot 2" loading="lazy" width="600" height="338" /></button></li>
+          <li><button type="button" data-full="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4158710/dd1a9cc0505b5692b617a25dd6c454139f32524f/ss_dd1a9cc0505b5692b617a25dd6c454139f32524f.1920x1080.jpg"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4158710/dd1a9cc0505b5692b617a25dd6c454139f32524f/ss_dd1a9cc0505b5692b617a25dd6c454139f32524f.600x338.jpg" alt="Blackout Arena screenshot 3" loading="lazy" width="600" height="338" /></button></li>
+          <li><button type="button" data-full="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4158710/5f62039a6e5edfc3ba0c43947403e767d9e00c9c/ss_5f62039a6e5edfc3ba0c43947403e767d9e00c9c.1920x1080.jpg"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4158710/5f62039a6e5edfc3ba0c43947403e767d9e00c9c/ss_5f62039a6e5edfc3ba0c43947403e767d9e00c9c.600x338.jpg" alt="Blackout Arena screenshot 4" loading="lazy" width="600" height="338" /></button></li>
+          <li><button type="button" data-full="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4158710/02f3fc0b3b488e816348d8bd63b6d326d2cd52bb/ss_02f3fc0b3b488e816348d8bd63b6d326d2cd52bb.1920x1080.jpg"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4158710/02f3fc0b3b488e816348d8bd63b6d326d2cd52bb/ss_02f3fc0b3b488e816348d8bd63b6d326d2cd52bb.600x338.jpg" alt="Blackout Arena screenshot 5" loading="lazy" width="600" height="338" /></button></li>
+          <li><button type="button" data-full="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4158710/97043e78a99d757bc1e5f631abbc4702fd9f84ea/ss_97043e78a99d757bc1e5f631abbc4702fd9f84ea.1920x1080.jpg"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4158710/97043e78a99d757bc1e5f631abbc4702fd9f84ea/ss_97043e78a99d757bc1e5f631abbc4702fd9f84ea.600x338.jpg" alt="Blackout Arena screenshot 6" loading="lazy" width="600" height="338" /></button></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ DESIGN BREAKDOWN ============ -->
+    <section class="section section--alt" id="breakdown" aria-labelledby="bd-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Case study · How I designed it</p>
+          <h2 id="bd-title" class="section__title">Design breakdown</h2>
+          <p class="section__lead">The decisions behind Blackout Arena: what I designed, why, and how I built and tested it.</p>
+        </header>
+
+        <!-- Core loop -->
+        <div class="loop reveal" aria-label="Core gameplay loop">
+          <h3 class="loop__title">Core gameplay loop</h3>
+          <ol class="loop__steps">
+            <li><span class="loop__n">01</span><strong>Explore</strong><small>Jungle paths, temples, ritual chambers</small></li>
+            <li><span class="loop__n">02</span><strong>Discover</strong><small>Relics, carved symbols, secret rooms</small></li>
+            <li><span class="loop__n">03</span><strong>Fight</strong><small>Guardians that adapt to the player</small></li>
+            <li><span class="loop__n">04</span><strong>Survive</strong><small>Complete the mission, earn the way forward</small></li>
+            <li><span class="loop__n">05</span><strong>Descend</strong><small>Go deeper: higher risk, darker truth</small></li>
+          </ol>
+          <p class="loop__note"><span aria-hidden="true">↻</span> Each mission repeats the loop one layer deeper, so curiosity pulls the player forward and risk pushes back.</p>
+        </div>
+
+        <!-- Pillars -->
+        <div class="pillars reveal">
+          <div class="pillar"><span>Mystery</span><p>Every ruin hides a question: who built the arena, and why?</p></div>
+          <div class="pillar"><span>Threat</span><p>Enemies that pressure the player and adapt to how they play.</p></div>
+          <div class="pillar"><span>Trial</span><p>The arena is a test. Progress has to be earned, not given.</p></div>
+          <div class="pillar"><span>Atmosphere</span><p>Cinematic, fire-lit spaces that make the player feel watched.</p></div>
+        </div>
+
+        <!-- Breakdown cards -->
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">⚔</div>
+            <h3>Combat &amp; enemy AI</h3>
+            <p class="card__intent"><b>Intent:</b> fights should read clearly in third person, and enemies should feel like guardians of the ruins, not random mobs.</p>
+            <ul>
+              <li>Designed the guardians' behaviour and encounter roles for third-person combat.</li>
+              <li>Built their decision-making with <b>Behavior Trees + Blackboard</b>.</li>
+              <li>Tuned encounter pacing and difficulty with <b>spreadsheet-based balancing</b>.</li>
+            </ul>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">⛰</div>
+            <h3>Level design</h3>
+            <p class="card__intent"><b>Intent:</b> make curiosity the main driver. The player should always see a reason to go deeper and pay a risk cost for it.</p>
+            <ul>
+              <li>Handcrafted spaces: overgrown jungle paths, ancient temples, underground ritual chambers.</li>
+              <li>Environmental storytelling through carved symbols, relics and secret chambers.</li>
+              <li>Exploration that rewards curiosity and punishes mistakes.</li>
+            </ul>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">◎</div>
+            <h3>Missions &amp; narrative</h3>
+            <p class="card__intent"><b>Intent:</b> use the mission structure to unfold the mystery one layer at a time.</p>
+            <ul>
+              <li>Mission-driven single-player campaign that escalates with depth.</li>
+              <li>Folk Heroes lore: past challengers who left relics and warnings, and mostly never returned.</li>
+              <li>Cinematic beats built in <b>Sequencer</b> to land key story moments.</li>
+            </ul>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">⚙</div>
+            <h3>Systems &amp; implementation</h3>
+            <p class="card__intent"><b>Intent:</b> a designer who can build their own designs gets them tested faster.</p>
+            <ul>
+              <li>Implemented gameplay in <b>Blueprints</b> and <b>C++</b>.</li>
+              <li>Built with <b>Nanite</b> and <b>Lumen</b> for dense geometry and cinematic lighting.</li>
+              <li>Full controller support; min-spec target of GTX&nbsp;1650 / 8&nbsp;GB RAM.</li>
+            </ul>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">✎</div>
+            <h3>Documentation</h3>
+            <p class="card__intent"><b>Intent:</b> keep the whole team building the same game.</p>
+            <ul>
+              <li>Wrote the <b>GDD</b> plus feature and mission specs.</li>
+              <li>Kept balancing data (enemy stats, difficulty) in spreadsheets so tuning stayed fast.</li>
+            </ul>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">▲</div>
+            <h3>Testing, iteration &amp; shipping</h3>
+            <p class="card__intent"><b>Intent:</b> ship it and learn from real players, instead of polishing forever.</p>
+            <ul>
+              <li>Playtest → debug → iterate cycles from first public demo (early 2026) to release.</li>
+              <li>Used <b>AI tools</b> to speed up scripting, content and testing workflows.</li>
+              <li>Took it through Steam: store page, release and post-launch updates.</li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- Lessons -->
+        <div class="lessons reveal">
+          <h3>What shipping a game taught me</h3>
+          <div class="lessons__grid">
+            <p><b>Ideas are the easy part.</b> The design work is in the loop, the systems, and in cutting what doesn't serve them.</p>
+            <p><b>Playtests beat opinions.</b> Watching someone play shows problems faster than any document.</p>
+            <p><b>Scope is a design tool.</b> A small team ships when every feature earns its place.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MORE WORK ============ -->
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Prototypes · Experiments · Other projects</p>
+          <h2 id="work-title" class="section__title">More work</h2>
+          <p class="section__lead">3.5 years of building: fast prototypes, genre experiments, and what's in production now.</p>
+        </header>
+        <!-- Cards are rendered from js/projects.js so new games can be added in one place -->
+        <div class="projects" id="projects-grid"></div>
+        <noscript><p class="muted">Enable JavaScript to see more projects, or visit <a href="https://red-deck.com/games">red-deck.com/games</a>.</p></noscript>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS ============ -->
+    <section class="section section--alt" id="process" aria-labelledby="process-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">How I work</p>
+          <h2 id="process-title" class="section__title">From idea to playable build</h2>
+        </header>
+        <ol class="process reveal">
+          <li><b>Concept</b><span>Player fantasy, pillars, references</span></li>
+          <li><b>Design</b><span>GDD, core loop, feature &amp; mission specs</span></li>
+          <li><b>Prototype</b><span>Greybox the core mechanic fast</span></li>
+          <li><b>Implement</b><span>Blueprints / C++, AI, Sequencer</span></li>
+          <li><b>Playtest</b><span>Watch players, collect issues</span></li>
+          <li><b>Iterate</b><span>Balance in sheets, cut, polish</span></li>
+          <li><b>Ship</b><span>Package, publish, update</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Toolkit</p>
+          <h2 id="skills-title" class="section__title">Skills</h2>
+        </header>
+        <div class="skills">
+          <div class="skill-group reveal">
+            <h3>Game design</h3>
+            <ul class="chips">
+              <li>Core gameplay loops</li><li>Combat design</li><li>Enemy &amp; encounter design</li>
+              <li>Level design</li><li>Mission design</li><li>Player progression</li>
+              <li>Difficulty balancing</li><li>Environmental storytelling</li><li>Player experience</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Unreal Engine 5</h3>
+            <ul class="chips">
+              <li>Blueprints</li><li>C++</li><li>Behavior Trees &amp; Blackboard</li>
+              <li>Sequencer</li><li>Nanite</li><li>Lumen</li><li>Packaging &amp; release</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Documentation &amp; process</h3>
+            <ul class="chips">
+              <li>GDD writing</li><li>Feature &amp; mission specs</li><li>Spreadsheet balancing</li>
+              <li>Rapid prototyping</li><li>Playtesting</li><li>Testing &amp; debugging</li><li>Iteration</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Also</h3>
+            <ul class="chips">
+              <li>Unity</li><li>Photon PUN (multiplayer)</li><li>Steam publishing</li>
+              <li>AI-accelerated workflows</li><li>AI agents &amp; automation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT / JOURNEY ============ -->
+    <section class="section section--alt" id="about" aria-labelledby="about-title">
+      <div class="container about">
+        <div class="about__text reveal">
+          <p class="eyebrow">About</p>
+          <h2 id="about-title" class="section__title">3.5 years of doing the job.<br /><span class="red">Now I want to do it with a team.</span></h2>
+          <p>
+            I started with one goal: learn how games are really made, then ship one. I spent my first six months on
+            Unity fundamentals, then moved to Unreal Engine 5. Since then I've built multiplayer, story-driven and
+            horror prototypes, combat systems, enemy AI, environments and levels.
+          </p>
+          <p>
+            That work led to <b>Blackout Arena</b>, which I took from concept to a commercial Steam release with a small
+            team. Now I want to join a studio as a <b>Game Designer</b>, where I can contribute from day one, learn from
+            experienced designers, and keep shipping.
+          </p>
+          <ul class="bring">
+            <li><b>Designer who can build.</b> I prototype and test my own ideas in Blueprints and C++.</li>
+            <li><b>Fast.</b> I use AI tools and lean workflows to get to a playable build quickly.</li>
+            <li><b>Shipped.</b> I know what it takes to finish, release and support a game.</li>
+            <li><b>Flexible.</b> Comfortable with work-from-office and open to relocating.</li>
+          </ul>
+        </div>
+
+        <div class="about__side">
+        <figure class="portrait reveal">
+          <img src="assets/b-manoj.jpg" alt="Portrait of B Manoj, Game Designer" width="800" height="960" loading="lazy" />
+          <figcaption><b>B Manoj</b><span>Game Designer · Bengaluru, India</span></figcaption>
+        </figure>
+
+        <ol class="timeline reveal" aria-label="Journey">
+          <li><span>2023</span><p>Started game development. Six months on Unity fundamentals.</p></li>
+          <li><span>2023 – 25</span><p>Moved to Unreal Engine 5. Prototyped multiplayer (Photon PUN), story-driven, horror, combat, AI and level design.</p></li>
+          <li><span>Late 2025</span><p>Full production on Blackout Arena under Red Deck Studio.</p></li>
+          <li><span>Early 2026</span><p>Released the first public demo. Playtested and iterated.</p></li>
+          <li class="is-key"><span>15 Apr 2026</span><p><b>Blackout Arena released on Steam.</b></p></li>
+          <li><span>2026</span><p>Hamster browser game, idea to playable in about 16 hours. Outlander in early production.</p></li>
+          <li class="is-now"><span>Now</span><p>Looking for my first studio role as a Game Designer.</p></li>
+        </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact__inner reveal">
+        <p class="eyebrow">Contact</p>
+        <h2 id="contact-title" class="contact__title">Let's make something players remember.</h2>
+        <p class="section__lead">Open to <b>Game Designer</b>, <b>Gameplay Designer</b> and <b>Level Designer</b> roles. Based in Bengaluru, open to relocation and work-from-office.</p>
+        <a class="btn btn--red btn--lg" href="mailto:b07manoj112004@gmail.com?subject=Game%20Designer%20role">b07manoj112004@gmail.com</a>
+        <ul class="contact__list">
+          <li><span>Phone</span><a href="tel:+916361391069">+91 63613 91069</a></li>
+          <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/b-manoj-b24448374" target="_blank" rel="noopener">in/b-manoj-b24448374</a></li>
+          <li><span>Steam</span><a href="https://store.steampowered.com/app/4158710/BLACKOUT_ARENA/" target="_blank" rel="noopener">Blackout Arena</a></li>
+          <li><span>Studio</span><a href="https://red-deck.com" target="_blank" rel="noopener">red-deck.com</a></li>
+          <li><span>Resume</span><a href="assets/B-Manoj-Game-Designer-Resume.pdf" download>Download PDF</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year">2026</span> B Manoj · Game Designer · Bengaluru, India</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- Screenshot lightbox -->
+  <dialog class="lightbox" id="lightbox" aria-label="Screenshot viewer">
+    <button class="lightbox__close" type="button" aria-label="Close">✕</button>
+    <button class="lightbox__nav lightbox__prev" type="button" aria-label="Previous screenshot">‹</button>
+    <img alt="" />
+    <button class="lightbox__nav lightbox__next" type="button" aria-label="Next screenshot">›</button>
+  </dialog>
+
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
